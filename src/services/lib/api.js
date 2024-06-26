@@ -6,8 +6,7 @@ export const httpSignal = axios.CancelToken.source();
 const CancelToken = axios.CancelToken;
 let requestSignal;
 
-// const BASE_URL = "https://coding-platform-rp5b.onrender.com"; // make provision to read from env 
-const BASE_URL = "http://localhost:7077";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 const API = axios.create({
     baseURL: BASE_URL,
