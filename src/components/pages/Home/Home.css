@@ -1,0 +1,33 @@
+.challenge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .challenge-card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .challenge-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .challenge-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .challenge-title:hover {
+    text-decoration: underline;
+  }
+  
+  .challenge-description {
+    color: #6c757d;
+  }
+  

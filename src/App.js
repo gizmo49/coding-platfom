@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Container, Spinner } from 'react-bootstrap';
+import AppContextProvider, { AppContext } from './context/AppContext';
+import Navbar from './components/organisms/Navbar';
+import Routes from './routes/Routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const AppLayout = () => {
+    const { loading } = useContext(AppContext);
+
+    if (loading) {
+        return (
+            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+                <Spinner animation="border" role="status">
+                </Spinner>
+            </Container>
+        );
+    }
+    return (
+        <Router>
+            <Navbar />
+            <Routes />
+        </Router>
+    )
 }
+
+
+const App = () => {
+    return (
+        <AppContextProvider>
+            <AppLayout />
+        </AppContextProvider>
+    );
+};
 
 export default App;

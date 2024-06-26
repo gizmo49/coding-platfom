@@ -1,0 +1,24 @@
+.challenge-details {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.challenge-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.challenge-details h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.challenge-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.challenge-details p {
+    font-size: 1.2em;
+}

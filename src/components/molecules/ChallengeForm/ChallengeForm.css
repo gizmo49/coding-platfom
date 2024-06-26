@@ -1,0 +1,33 @@
+.challenge-form {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .challenge-form .form-control-custom {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+  
+  .challenge-form .form-control-custom:focus {
+    border-color: #80bdff;
+    box-shadow: none;
+  }
+  
+  .challenge-form .submit-button {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .challenge-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .challenge-form .btn {
+    margin-top: 0.5rem;
+  }
+  
